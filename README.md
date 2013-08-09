@@ -1,4 +1,5 @@
 ##The is the homework porject for my android lesson.
+###It is mainly adapted from an open android application of fanfou.
 
 ####Currently,the following functions are added:
 *   Login with your student number and password
