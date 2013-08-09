@@ -11,5 +11,5 @@
 ####TODO:
 *   find friends with the same interest of books
 *   share your books with your friends
-*   add LBS to find what books are borrowed by others in your neighbourd
+*   add LBS to find what books are borrowed by others in your neighbourhood
 *   ...
