@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@color/body_background"
+    android:orientation="vertical" >
+
+    <!-- Header -->
+
+    <include layout="@layout/header_book_info" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFEFF0F4"
+        android:scrollbars="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFEFF0F4"
+            android:orientation="vertical" >
+
+            <!-- 头像部分 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:background="#FFEFF0F4"
+                android:orientation="vertical" >
+
+                <!-- 头像图片 -->
+
+
+                <!-- 用户名。。Email? -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical" >
+
+                    <!-- 发送回复 -->
+
+                    <Button
+                        android:id="@+id/sendmetion_btn"
+                        style="@style/Button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginRight="10.0dip"
+                        android:text="@string/profile_send_mention"
+                        android:visibility="gone" />
+
+                    <!-- 发送私信 -->
+
+                    <Button
+                        android:id="@+id/senddm_btn"
+                        style="@style/Button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10.0dip"
+                        android:text="@string/profile_send_dm"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </RelativeLayout>
+            <!-- 操作按钮部分 -->
+
+
+            <!-- 基本信息部分 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:background="@drawable/panel_bg"
+                android:padding="20.0dip" >
+
+                <TextView
+                    android:id="@+id/book_name"
+                    style="@style/normalText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_3"
+                android:layout_width="fill_parent"
+                android:layout_height="100.0dip"
+                android:layout_margin="10.0dip"
+                android:background="@drawable/panel_bg" >
+
+                <TextView
+                    android:id="@+id/user_location_title"
+                    style="@style/normalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="10.0dip"
+                    android:gravity="center_vertical"
+                    android:text="时间："
+                    android:textColor="#FF7D899D"
+                    android:textSize="16.0sp" >
+
+                </TextView>
+                <!-- 所在地 -->
+
+                <TextView
+                    android:id="@+id/book_search_number"
+                    style="@style/normalText.span"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/user_location_title"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@id/user_location_title"
+                    android:textSize="16.0sp" >
+                </TextView>
+                <!-- 分隔条 -->
+
+                <View
+                    android:id="@+id/view_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/horizontal_separation_line" >
+                </View>
+                <!-- 网站 -->
+
+                <TextView
+                    android:id="@+id/user_url_title"
+                    style="@style/normalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/user_location_title"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/view_3"
+                    android:gravity="center_vertical"
+                    android:text="出版社："
+                    android:textColor="#FF7D899D"
+                    android:textSize="16.0sp" >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/book_publish"
+                    style="@style/normalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/view_3"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@id/user_url_title"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textSize="16.0sp" >
+                </TextView>
+                
+                  
+                
+            </RelativeLayout>
+
+            <!-- 自我描述部分 -->
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地点：" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:layout_weight="3.0"
+                android:background="@drawable/panel_bg"
+                android:padding="10.0dip" >
+
+                <ListView
+                    android:id="@+id/book_address_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@drawable/dashed_line"
+                    android:dividerHeight="1dip"
+                    android:fadeScrollbars="true"
+                    android:fastScrollEnabled="true" />
+
+            </RelativeLayout>
+            <!-- 按钮面板部分 -->
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

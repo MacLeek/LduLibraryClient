@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_view_content"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="4dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp" >
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="fill_parent"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:text="TextView01"
+        android:textSize="20dip" />
+
+    
+    <TextView
+        android:id="@+id/writer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Title"
+        android:layout_marginLeft="10dp"
+        android:maxWidth="100dp"
+        android:singleLine="true"
+        android:text="张都"
+        android:textSize="10dip" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/writer"
+        android:layout_marginLeft="10dp"
+		android:layout_centerHorizontal="true"
+        android:text="2011"
+        android:textSize="10dip" />
+
+    <TextView
+        android:id="@+id/publish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/date"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/date"
+        android:maxWidth="70dp"
+        android:singleLine="true"
+        android:text="清华大学出版社"
+        android:textSize="10dip" />
+
+    <TextView
+        android:id="@+id/min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/publish"
+        android:layout_alignBottom="@+id/publish"
+        android:layout_alignRight="@+id/Title"
+        android:text="2" />
+
+    <TextView
+        android:id="@+id/max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/min"
+        android:layout_alignBottom="@+id/min"
+        android:layout_marginRight="18dp"
+        android:layout_toLeftOf="@+id/min"
+        android:text="3" />
+    <TextView 
+        android:id="@+id/system_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</RelativeLayout>

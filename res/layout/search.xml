@@ -1,0 +1,29 @@
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical"
+  android:background="@color/body_background"
+  >
+  	 <!-- Header -->
+  	 <include layout="@layout/header_search"/>
+  	 
+	 <!-- 复合列表，包含保存的搜索和热门搜索 -->
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tushu" android:layout_gravity="center"/>
+    <ListView android:id="@+id/search_section_list"
+	  	android:layout_width="96dp"
+	  	android:layout_height="wrap_content"
+	  	android:layout_weight="1" 
+ 	    android:cacheColorHint="#00000000"
+	    android:fadeScrollbars="true"
+    	android:divider="@drawable/dashed_line"
+    	android:dividerHeight="1dip"
+    	android:fastScrollEnabled="true"
+	/>
+			  
+	  <!-- Footer -->
+  	 <include layout="@layout/foot_search"/>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/src/cn/gdou/edu/AndroidLIBActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/gdou/edu/BaseActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/gdou/edu/BorrowedInfoActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/gdou/edu/ChangpassActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/gdou/edu/LoginActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/gdou/edu/SearchActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/gdou/edu/Test.java" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/src/cn/gdou/edu/data/BookInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/gdou/edu/net/JsoupUtils.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/gdou/edu/net/LibAPI.java" charset="GB2312" />
+  </component>
+</project>
+

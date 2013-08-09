@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/body_background"
+    android:orientation="vertical" >
+
+    <!-- Header -->
+
+    <include layout="@layout/header" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFEFF0F4"
+        android:scrollbars="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFEFF0F4"
+            android:orientation="vertical" >
+
+            <!-- 头像部分 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:background="#FFEFF0F4"
+                android:orientation="vertical" >
+            </RelativeLayout>
+
+            <!-- 操作按钮部分 -->
+
+            <RelativeLayout
+                android:id="@+id/relative_following"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:background="@drawable/panel_bg" >
+
+                <TextView
+                    android:id="@+id/book_number"
+                    style="@style/normalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="10.0dip"
+                    android:text="证号："
+                    android:textColor="#FF7D899D"
+                    android:textSize="16.0dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/normalText.span"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/book_number"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@id/book_number"
+                    />
+            </RelativeLayout>
+
+            <!-- 基本信息部分 -->
+
+            <RelativeLayout
+                android:id="@+id/relative_3"
+                android:layout_width="fill_parent"
+                android:layout_height="100.0dip"
+                android:layout_margin="10.0dip"
+                android:background="@drawable/panel_bg" >
+
+                <TextView
+                    android:id="@+id/user_location_title"
+                    style="@style/normalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="10.0dip"
+                    android:gravity="center_vertical"
+                    android:text="名字："
+                    android:textColor="#FF7D899D"
+                    android:textSize="16.0sp" >
+                </TextView>
+                <!-- 所在地 -->
+
+                <TextView
+                    android:id="@+id/user_location"
+                    style="@style/normalText.span"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/user_location_title"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@id/user_location_title"
+                    android:textSize="16.0sp" >
+                </TextView>
+                <!-- 分隔条 -->
+
+                <View
+                    android:id="@+id/view_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/horizontal_separation_line" >
+                </View>
+                <!-- 网站 -->
+
+                <TextView
+                    android:id="@+id/user_url_title"
+                    style="@style/normalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/user_location_title"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/view_3"
+                    android:gravity="center_vertical"
+                    android:text="学历："
+                    android:textColor="#FF7D899D"
+                    android:textSize="16.0sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/user_url"
+                    style="@style/normalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/view_3"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@id/user_url_title"
+                    android:autoLink="web"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textSize="16.0sp" >
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_4"
+                android:layout_width="fill_parent"
+                android:layout_height="100.0dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/panel_bg" >
+
+                <TextView
+                    android:id="@+id/state"
+                    style="@style/normalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="10.0dip"
+                    android:gravity="center_vertical"
+                    android:text="性别："
+                    android:textColor="#FF7D899D"
+                    android:textSize="16.0sp" >
+                </TextView>
+                <!-- 所在地 -->
+
+                <TextView
+                    android:id="@+id/state_content"
+                    style="@style/normalText.span"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/state"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@id/state"
+                    android:textSize="16.0sp" >
+                </TextView>
+
+                <View
+                    android:id="@+id/view_4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/horizontal_separation_line" >
+                </View>
+
+                <TextView
+                    android:id="@+id/position"
+                    style="@style/normalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_4"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="10.0dip"
+                    android:gravity="center_vertical"
+                    android:text="学院："
+                    android:textColor="#FF7D899D"
+                    android:textSize="16.0sp" >
+                </TextView>
+                <!-- 所在地 -->
+
+                <TextView
+                    android:id="@+id/position_content"
+                    style="@style/normalText.span"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_4"
+                    android:layout_alignTop="@id/position"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@id/position"
+                    android:textSize="16.0sp" >
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_5"
+                android:layout_width="fill_parent"
+                android:layout_height="100.0dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/panel_bg" >
+
+                <TextView
+                    android:id="@+id/call_number"
+                    style="@style/normalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="10.0dip"
+                    android:gravity="center_vertical"
+                    android:text="电话："
+                    android:textColor="#FF7D899D"
+                    android:textSize="16.0sp" >
+                </TextView>
+                <!-- 所在地 -->
+
+                <TextView
+                    android:id="@+id/call_number_content"
+                    style="@style/normalText.span"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/call_number"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@id/call_number"
+                    android:textSize="16.0sp" >
+                </TextView>
+
+                <View
+                    android:id="@+id/view_5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/horizontal_separation_line" >
+                </View>
+
+                <TextView
+                    android:id="@+id/cellphone"
+                    style="@style/normalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_5"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="10.0dip"
+                    android:gravity="center_vertical"
+                    android:text="手机："
+                    android:textColor="#FF7D899D"
+                    android:textSize="16.0sp" >
+                </TextView>
+                <!-- 所在地 -->
+
+                <TextView
+                    android:id="@+id/cellphone_content"
+                    style="@style/normalText.span"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_5"
+                    android:layout_alignTop="@id/cellphone"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@id/cellphone"
+                    android:textSize="16.0sp" >
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_6"
+                android:layout_width="fill_parent"
+                android:layout_height="100.0dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/panel_bg" >
+
+                <TextView
+                    android:id="@+id/address"
+                    style="@style/normalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="10.0dip"
+                    android:gravity="center_vertical"
+                    android:text="址址："
+                    android:textColor="#FF7D899D"
+                    android:textSize="16.0sp" >
+                </TextView>
+                <!-- 所在地 -->
+
+                <TextView
+                    android:id="@+id/address_content"
+                    style="@style/normalText.span"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/address"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@id/address"
+                    android:textSize="16.0sp" >
+                </TextView>
+                <!-- 分隔条 -->
+
+                <View
+                    android:id="@+id/view_6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/horizontal_separation_line" >
+                </View>
+                <!-- 网站 -->
+
+                <TextView
+                    android:id="@+id/email"
+                    style="@style/normalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/address"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/view_6"
+                    android:gravity="center_vertical"
+                    android:text="当前状态："
+                    android:textColor="#FF7D899D"
+                    android:textSize="16.0sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/email_content"
+                    style="@style/normalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/view_6"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@id/email"
+                    android:autoLink="email"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textSize="16.0sp" >
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_7"
+                android:layout_width="fill_parent"
+                android:layout_height="100.0dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/panel_bg" >
+
+                <TextView
+                    android:id="@+id/other"
+                    style="@style/normalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="10.0dip"
+                    android:gravity="center_vertical"
+                    android:text="备注："
+                    android:textColor="#FF7D899D"
+                    android:textSize="16.0sp" >
+                </TextView>
+                <!-- 所在地 -->
+
+                <TextView
+                    android:id="@+id/other_content"
+                    style="@style/normalText.span"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/other"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@id/other"
+                    android:textSize="16.0sp" >
+                </TextView>
+                <!-- 分隔条 -->
+
+                <View
+                    android:id="@+id/view_7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/horizontal_separation_line" >
+                </View>
+                <!-- 网站 -->
+
+                <TextView
+                    android:id="@+id/money"
+                    style="@style/normalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/other"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/view_7"
+                    android:gravity="center_vertical"
+                    android:text="违期欠款："
+                    android:textColor="#FF7D899D"
+                    android:textSize="16.0sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/money_content"
+                    style="@style/normalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/view_7"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@id/money"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textSize="16.0sp" >
+                </TextView>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

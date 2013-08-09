@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/body_background"
+    android:orientation="vertical" >
+
+    <!-- Header -->
+
+    <include layout="@layout/header_book_info" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:layout_weight="0.91"
+        android:padding="15dp" >
+
+        <TextView
+            android:id="@+id/login_password_input"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="旧图书密码：" />
+
+        <EditText
+            android:id="@+id/oldpass"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_password_input"
+            android:inputType="textPassword"
+            android:password="true"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/text1"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/oldpass"
+            android:layout_marginTop="3dp"
+            android:text="新图书密码：" />
+
+        <EditText
+            android:id="@+id/newpass"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text1"
+            android:inputType="textPassword"
+            android:password="true"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/text2"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newpass"
+            android:layout_marginTop="3dp"
+            android:text="确认图书密码：" />
+     
+        <EditText
+            android:id="@+id/renewpass"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:password="true"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/yes"
+            style="@style/blue_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/renewpass"
+            android:layout_below="@+id/renewpass"
+            android:layout_marginTop="21dp"
+            android:text="修改" />
+
+    </RelativeLayout>
+
+</LinearLayout>
